@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon1.jfif">
+
+    <title>Notre Menu</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><span>R</span>esto</a>
+
+        <div class="menutoggle" onclick="toggleMenu();">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#naan">naan</a></li>
+            <li><a href="#burger">burger</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+            <a href="#" class="btn-reserve">rreservation</a>
+        </ul>
+    </header>
+
+    
+    <script type="text/javascript">
+      window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0 );
+      });
+
+      function toggleMenu(){
+        const toggleMenu = document.querySelector('.menutoggle');
+        const navbar = document.querySelector('.navbar');
+        toggleMenu.classList.toggle('active');
+        navbar.classList.toggle('active');
+      }
+    </script>
+
+<section class="page-menu-banniere">
+  <div class="page-menu-contenu">
+    <h1>Notre Menu</h1>
+    <p>Découvrez tous nos plats faits maison</p>
+  </div>
+</section>
+
+<section class="page-menu">
+  <div class="menu-grille">
+    <!-- vos cartes .menu-carte ici -->
+  </div>
+</section>
+
+<section class="burger" id="burger">
+  <div class="menu-grille">
+
+    <div class="menu-carte">
+      <div class="menu-header">
+        <div class="menu-logo-badge">B</div>
+        <h2>BURGER</h2>
+      </div>
+      <div class="menu-colonnes">
+        <span>Seul</span>
+        <span>Menu</span>
+      </div>
+      <ul class="menu-liste">
+        <li class="menu-item">
+          <img src="img1.jpg" alt="Burger Cheese">
+          <span class="menu-nom">Burger Cheese</span>
+          <span class="menu-prix">5,00</span>
+          <span class="menu-prix">6,50</span>
+        </li>
+
+      <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+<li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <!-- ... vos autres burgers ... -->
+      </ul>
+    </div>
+
+    <div class="menu-carte">
+      <div class="menu-header">
+        <div class="menu-logo-badge">T</div>
+        <h2>TACOS</h2>
+      </div>
+      <div class="menu-colonnes">
+        <span>Seul</span>
+        <span>Menu</span>
+      </div>
+      <ul class="menu-liste">
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <!-- ... vos autres tacos ... -->
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+<section class="naan" id="naan">
+  <div class="menu-grille">
+
+    <div class="menu-carte">
+      <div class="menu-header">
+        <div class="menu-logo-badge">N</div>
+        <h2>NAAN</h2>
+      </div>
+      <div class="menu-colonnes">
+        <span>Seul</span>
+        <span>Menu</span>
+      </div>
+      <ul class="menu-liste">
+        <li class="menu-item">
+          <img src="img1.jpg" alt="Burger Cheese">
+          <span class="menu-nom">Burger Cheese</span>
+          <span class="menu-prix">5,00</span>
+          <span class="menu-prix">6,50</span>
+        </li>
+
+      <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+<li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <!-- ... vos autres burgers ... -->
+      </ul>
+    </div>
+
+    <div class="menu-carte">
+      <div class="menu-header">
+        <div class="menu-logo-badge">P</div>
+        <h2>PANIN</h2>
+      </div>
+      <div class="menu-colonnes">
+        <span>Seul</span>
+        <span>Menu</span>
+      </div>
+      <ul class="menu-liste">
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+         <li class="menu-item">
+          <img src="img10.jpg" alt="Tacos">
+          <span class="menu-nom">Tacos 1 viande</span>
+          <span class="menu-prix">6,00</span>
+          <span class="menu-prix">7,50</span>
+        </li>
+
+        <!-- ... vos autres tacos ... -->
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+<section class="contact" id="contact">
+  <h1>Nos Contact</h1>
+  <p class="sous-titre">Une envie, une question, une envie de commander ? Contactez-nous ou trouvez votre chemin directement.</p>
+
+  <div class="contact-grille">
+
+    <div class="contact-infos">
+      <div class="contact-ligne">
+        <i class="fa-solid fa-location-dot"></i>
+        <div>
+          <strong>Adresse</strong>
+          <p> 65000 Tarbes</p>
+        </div>
+      </div>
+
+      <div class="contact-ligne">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <strong>Téléphone</strong>
+          <p>00 00 00 00 00 </p>
+        </div>
+      </div>
+
+      <div class="contact-ligne">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <strong>Email</strong>
+          <p>Exmple@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-ligne">
+        <i class="fa-solid fa-clock"></i>
+        <div>
+          <strong>Horaires d'ouverture</strong>
+          <p>7/7j  24/24h</p>
+        </div>
+      </div>
+
+      <div class="contact-boutons">
+        <a href="#" class="btn-noir">Commander sur UberEats</a>
+        <a href="#" class="btn-noir">Commander sur Deliveroo</a>
+        <a href="#" class="btn-contour">Nous appeler</a>
+      </div>
+    </div>
+
+    <div class="contact-carte">
+      <h3>New Street Food</h3>
+      <iframe
+        src="https://www.google.com/maps?q=11+Rue+Fran%C3%A7ois+Mousis,+65000+Tarbes&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=11+Rue+Fran%C3%A7ois+Mousis,+65000+Tarbes" class="btn-itineraire">Itinéraire</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!--<section class="page-menu">
+  <div class="menu-carte">
+
+    <div class="menu-header">
+      <div class="menu-logo-badge">B</div>
+      <h2>BURGER</h2>
+    </div>
+
+    <div class="menu-colonnes">
+      <span>Seul</span>
+      <span>Menu</span>
+    </div>
+
+    <ul class="menu-liste">
+
+      <li class="menu-item">
+        <img src="img1.jpg" alt="Burger Cheese">
+        <span class="menu-nom">Burger Cheese</span>
+        <span class="menu-prix">5,00</span>
+        <span class="menu-prix">6,50</span>
+      </li>
+
+      <li class="menu-item">
+        <img src="img2.jpg" alt="Dub Cheese">
+        <span class="menu-nom">Dub Cheese</span>
+        <span class="menu-prix">6,50</span>
+        <span class="menu-prix">8,00</span>
+      </li>
+
+      <li class="menu-item">
+        <img src="img3.jpg" alt="Triple Cheese">
+        <span class="menu-nom">Triple Cheese</span>
+        <span class="menu-prix">7,50</span>
+        <span class="menu-prix">9,00</span>
+      </li>
+
+      <li class="menu-item">
+        <img src="img10.jpg" alt="Burger Street">
+        <span class="menu-nom">Burger Street</span>
+        <span class="menu-prix">8,50</span>
+        <span class="menu-prix">10,00</span>
+      </li>
+
+      <li class="menu-item">
+        <img src="img11.jpg" alt="Burger Chicken">
+        <span class="menu-nom">Burger Chicken</span>
+        <span class="menu-prix">6,50</span>
+        <span class="menu-prix">8,00</span>
+      </li>
+
+    </ul>
+
+
+<li class="menu-item">
+        <img src="img10.jpg" alt="Burger Street">
+        <span class="menu-nom">Burger Street</span>
+        <span class="menu-prix">8,50</span>
+        <span class="menu-prix">10,00</span>
+      </li>
+
+<li class="menu-item">
+        <img src="img10.jpg" alt="Burger Street">
+        <span class="menu-nom">Burger Street</span>
+        <span class="menu-prix">8,50</span>
+        <span class="menu-prix">10,00</span>
+      </li>
+  </div>
+</section> -->
+
+
+<!-- ... vos autres burgers ... -->
+
+<!--<section class="page-menu"></section>
+
+  <div class="menu-carte">
+
+    <div class="menu-header">
+      <div class="menu-logo-badge">B</div>
+      <h2>BURGER</h2>
+    </div>
+
+    <div class="menu-colonnes">
+      <span>Seul</span>
+      <span>Menu</span>
+    </div>
+
+    <ul class="menu-liste">
+
+      <li class="menu-item">
+        <img src="img1.jpg" alt="Burger Cheese">
+        <span class="menu-nom">Burger Cheese</span>
+        <span class="menu-prix">5,00</span>
+        <span class="menu-prix">6,50</span>
+      </li>
+
+      <li class="menu-item">
+        <img src="img2.jpg" alt="Dub Cheese">
+        <span class="menu-nom">Dub Cheese</span>
+        <span class="menu-prix">6,50</span>
+        <span class="menu-prix">8,00</span>
+      </li>
+
+      <li class="menu-item">
+        <img src="img3.jpg" alt="Triple Cheese">
+        <span class="menu-nom">Triple Cheese</span>
+        <span class="menu-prix">7,50</span>
+        <span class="menu-prix">9,00</span>
+      </li>
+
+
+
+      <li class="menu-item">
+        <img src="img10.jpg" alt="Burger Street">
+        <span class="menu-nom">Burger Street</span>
+        <span class="menu-prix">8,50</span>
+        <span class="menu-prix">10,00</span>
+      </li>
+
+      <li class="menu-item">
+        <img src="img11.jpg" alt="Burger Chicken">
+        <span class="menu-nom">Burger Chicken</span>
+        <span class="menu-prix">6,50</span>
+        <span class="menu-prix">8,00</span>
+      </li>
+
+    </ul>
+
+
+<li class="menu-item">
+        <img src="img10.jpg" alt="Burger Street">
+        <span class="menu-nom">Burger Street</span>
+        <span class="menu-prix">8,50</span>
+        <span class="menu-prix">10,00</span>
+      </li>
+
+<li class="menu-item">
+        <img src="img10.jpg" alt="Burger Street">
+        <span class="menu-nom">Burger Street</span>
+        <span class="menu-prix">8,50</span>
+        <span class="menu-prix">10,00</span>
+      </li>
+
+
+
+  </div>
+</section>-->
+
+</body>
+</html>
