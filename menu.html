@@ -26,7 +26,7 @@
             <li><a href="#burger">burger</a></li>
 
             <li><a href="#contact">Contact</a></li>
-            <a href="#" class="btn-reserve">rreservation</a>
+            <a href="#commande" class="btn-reserve">Commande</a>
         </ul>
     </header>
 
@@ -57,7 +57,7 @@
     <!-- vos cartes .menu-carte ici -->
   </div>
 </section>
-
+ <!-- vos cartes .menu-carte ici 
 <section class="burger" id="burger">
   <div class="menu-grille">
 
@@ -125,7 +125,7 @@
           <span class="menu-prix">7,50</span>
         </li>
 
-        <!-- ... vos autres burgers ... -->
+        <!-- ... vos autres burgers ...
       </ul>
     </div>
 
@@ -195,7 +195,16 @@
           <span class="menu-prix">7,50</span>
         </li>
 
-        <!-- ... vos autres tacos ... -->
+
+        <li class="menu-item">
+    <img src="img10.jpg" alt="Tacos">
+    <span class="menu-nom">Tacos 1 viande</span>
+    <!-- Bouton pour le prix Seul (6.00 €) 
+    <button type="button" class="btn-prix" onclick="ajouterAuPanier('Tacos 1 viande (Seul)', 6.00)">6,00 €</button>
+    <!-- Bouton pour le prix Menu (7.50 €) 
+    <button type="button" class="btn-prix" onclick="ajouterAuPanier('Tacos 1 viande (Menu)', 7.50)">7,50 €</button>
+</li>
+        <!-- ... vos autres tacos ... 
       </ul>
     </div>
 
@@ -204,7 +213,7 @@
 </section>
 
 
-
+-->
 
 
 
@@ -220,60 +229,63 @@
         <span>Seul</span>
         <span>Menu</span>
       </div>
-      <ul class="menu-liste">
-        <li class="menu-item">
-          <img src="img1.jpg" alt="Burger Cheese">
-          <span class="menu-nom">Burger Cheese</span>
-          <span class="menu-prix">5,00</span>
-          <span class="menu-prix">6,50</span>
-        </li>
+      <!-- Liste des Plats/Tacos -->
+<ul class="menu-liste">
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,00 €</button>
+  </li>
 
-      <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
-        <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
-<li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Burger Cheese" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Burger Cheese</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,50 €</button>
+  </li>
+</ul>
+        <!-- Liste des Plats/Tacos -->
+<ul class="menu-liste">
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,00 €</button>
+  </li>
 
-        <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Burger Cheese" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Burger Cheese</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,50 €</button>
+  </li>
+</ul>
+        <!-- Liste des Plats/Tacos -->
+<ul class="menu-liste">
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,00 €</button>
+  </li>
 
-         <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Burger Cheese" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Burger Cheese</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,50 €</button>
+  </li>
+</ul>
 
-         <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+         <!-- Liste des Plats/Tacos -->
+<ul class="menu-liste">
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,00 €</button>
+  </li>
 
-         <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Burger Cheese" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Burger Cheese</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,50 €</button>
+  </li>
+</ul>
 
         <!-- ... vos autres burgers ... -->
       </ul>
@@ -289,63 +301,139 @@
         <span>Menu</span>
       </div>
       <ul class="menu-liste">
-        <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+        
+        <!-- Liste des Plats/Tacos -->
+<ul class="menu-liste">
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,00 €</button>
+  </li>
 
-        <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Burger Cheese" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Burger Cheese</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,50 €</button>
+  </li>
+</ul>
 
-        <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+        <!-- Liste des Plats/Tacos -->
+<ul class="menu-liste">
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,00 €</button>
+  </li>
 
-        <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Burger Cheese" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Burger Cheese</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,50 €</button>
+  </li>
+</ul>
+         
 
-        <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
 
-        <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+
+<!-- Liste des Plats/Tacos -->
+<ul class="menu-liste">
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,00 €</button>
+  </li>
+
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Burger Cheese" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Burger Cheese</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Burger Cheese', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,50 €</button>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
 
          <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+    <img src="img10.jpg" alt="Tacos">
+    <span class="menu-nom">Tacos 1 viande</span>
+    <!-- Bouton pour le prix Seul (6.00 €) 
+    <button type="button" class="btn-prix" onclick="ajouterAuPanier('Tacos 1 viande (Seul)', 6.00)">6,00 €</button>
+    <!-- Bouton pour le prix Menu (7.50 €) 
+    <button type="button" class="btn-prix" onclick="ajouterAuPanier('Tacos 1 viande (Menu)', 7.50)">7,50 €</button>
+</li>
 
-         <li class="menu-item">
-          <img src="img10.jpg" alt="Tacos">
-          <span class="menu-nom">Tacos 1 viande</span>
-          <span class="menu-prix">6,00</span>
-          <span class="menu-prix">7,50</span>
-        </li>
+<li class="menu-item" onclick="ouvrirModale('Le typique', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <img src="img10.jpg" alt="Le typique">
+    <span class="menu-nom">Le typique</span>
+    <span class="menu-prix">À partir de 6,50 €</span>
+</li>
 
-        <!-- ... vos autres tacos ... -->
+
+<li class="menu-item">
+    <!-- Clic sur la petite image du Tacos 
+    <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <!-- Clic sur le nom du plat 
+    <span class="menu-nom" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Garni de sauce fromagère et frites.')" style="cursor: pointer;">Tacos 1 viande</span>
+    
+    <button type="button" class="btn-prix" onclick="ajouterAuPanier('Tacos 1 viande (Seul)', 6.00)">6,00 €</button>
+    
+    <button type="button" class="btn-prix" onclick="ajouterAuPanier('Tacos 1 viande (Menu)', 7.50)">7,50 €</button>
+
+  </li>
+
+
+
+<li class="menu-item">
+    <!-- Clic sur la petite image du Tacos 
+    <img src="img10.jpg" onclick="ouvrirModale('Tacos 1 viande', 6, 'tacos.jpg', 'Super tacos')" style="cursor: pointer;">
+    <!-- Clic sur le nom du plat 
+    <span class="menu-nom" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Garni de sauce fromagère et frites.')" style="cursor: pointer;">Tacos 1 viande</span>
+    
+    <button type="button" class="btn-prix" onclick="ajouterAuPanier('Tacos 1 viande (Seul)', 6.00)">6,00 €</button>
+    
+    <button type="button" class="btn-prix" onclick="ajouterAuPanier('Tacos 1 viande (Menu)', 7.50)">7,50 €</button>
+
+  </li>
+
+
+<li class="menu-item">
+  <!-- Clic sur l'image ouvre la modale 
+  <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+
+  <!-- Clic sur le nom du plat ouvre la modale 
+  <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+
+  <!-- Bouton direct ou ouverture modale 
+  <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">6,00 €</button>
+</li>
+
+
+
+        <!-- ... vos autres tacos ...
       </ul>
     </div>
 
@@ -353,6 +441,40 @@
 
 </section>
 
+
+
+
+
+<!-- Section Panier stylisée 
+<div class="cart-container">
+  <h2><i class="fas fa-shopping-basket"></i> Votre Commande</h2>
+  
+  <!-- Liste des articles 
+  <div id="liste-panier" class="cart-items">
+    <p class="empty-cart-msg">Votre panier est vide pour le moment.</p>
+  </div>
+
+  <!-- Total 
+  <div class="cart-total">
+    <span>Total à payer sur place :</span>
+    <strong><span id="total-prix">0.00</span> €</strong>
+  </div>
+
+  <!-- Formulaire Client 
+  <form id="commande-form" class="cart-form">
+    <div class="inputboite">
+      <input type="text" id="client_nom" placeholder="Votre Nom et Prénom" required>
+    </div>
+    <div class="inputboite">
+      <input type="tel" id="client_tel" placeholder="Numéro de Téléphone" required>
+    </div>
+    <div class="inputboite">
+      <label for="heure_retrait" style="font-size: 0.9em; color: #666; display: block; margin-bottom: 5px;">Heure de retrait souhaitée :</label>
+      <input type="time" id="heure_retrait" required>
+    </div>
+    <button type="submit" class="btn-valider">Valider la commande (Payer sur place)</button>
+  </form>
+</div>
 
 
 
@@ -421,155 +543,759 @@
 </section>
 
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+  (function() {
+    // Ta clé publique EmailJS
+    emailjs.init("VOTRE_PUBLIC_KEY");
+  })();
+
+  let panier = [];
+
+  // Ajouter un article au panier
+  function ajouterAuPanier(nomPlat, prix) {
+    panier.push({ nom: nomPlat, prix: prix });
+    afficherPanier();
+  }
+
+  // Supprimer un article spécifique du panier
+  function supprimerDuPanier(index) {
+    panier.splice(index, 1);
+    afficherPanier();
+  }
+
+  // Mettre à jour l'affichage du panier
+  function afficherPanier() {
+    const listeHTML = document.getElementById('liste-panier');
+    const totalHTML = document.getElementById('total-prix');
+    
+    if (panier.length === 0) {
+      listeHTML.innerHTML = '<p class="empty-cart-msg">Votre panier est vide pour le moment.</p>';
+      totalHTML.innerText = '0.00';
+      return;
+    }
+
+    listeHTML.innerHTML = '';
+    let total = 0;
+
+    panier.forEach((item, index) => {
+      total += item.prix;
+      listeHTML.innerHTML += `
+        <div class="cart-item">
+          <div class="cart-item-info">
+            <span class="cart-item-title">${item.nom}</span>
+            <span class="cart-item-price">${item.prix.toFixed(2)} €</span>
+          </div>
+          <button type="button" class="btn-remove" onclick="supprimerDuPanier(${index})">
+            Supprimer
+          </button>
+        </div>
+      `;
+    });
+
+    totalHTML.innerText = total.toFixed(2);
+  }
+
+  // Envoi de la commande
+  document.getElementById('commande-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (panier.length === 0) {
+      alert("Votre panier est vide ! Veuillez ajouter des produits avant de commander.");
+      return;
+    }
+
+    let detailsCommande = panier.map(item => `${item.nom} (${item.prix.toFixed(2)}€)`).join('\n - ');
+    let totalCommande = document.getElementById('total-prix').innerText;
+
+    let params = {
+      user_name: document.getElementById('client_nom').value,
+      user_phone: document.getElementById('client_tel').value,
+      heure_retrait: document.getElementById('heure_retrait').value,
+      details_commande: "\n - " + detailsCommande,
+      total: totalCommande + " €"
+    };
+
+    emailjs.send('VOTRE_SERVICE_ID', 'VOTRE_TEMPLATE_ID', params)
+      .then(function() {
+        alert('Commande enregistrée ! Vous pourrez régler directement au restaurant lors du retrait.');
+        panier = [];
+        afficherPanier();
+        document.getElementById('commande-form').reset();
+      }, function(error) {
+        alert("Erreur lors de l'envoi de la commande. Veuillez réinstaller votre connexion.");
+        console.error(error);
+      });
+  });
+</script>
 
 
 
-<!--<section class="page-menu">
-  <div class="menu-carte">
 
-    <div class="menu-header">
-      <div class="menu-logo-badge">B</div>
-      <h2>BURGER</h2>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modale de personnalisation 
+<div id="modal-produit" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="fermerModale()">&times;</span>
+    <div class="modal-body">
+      <div class="modal-image">
+        <img id="modal-img" src="" alt="Plat">
+      </div>
+      <div class="modal-options">
+        <h2 id="modal-titre">Nom du plat</h2>
+        <p id="modal-desc" class="modal-description">Description du plat...</p>
+
+        <!-- Choix du pain 
+        <div class="option-group">
+          <h3>Pains au choix <span class="required">*</span></h3>
+          <label><input type="radio" name="pain" value="Naan" checked> Naan</label>
+          <label><input type="radio" name="pain" value="Pain Turc"> Pain Turc</label>
+          <label><input type="radio" name="pain" value="Wrap"> Wrap</label>
+        </div>
+
+        <!-- Option Menu 
+        <div class="option-group">
+          <h3>En menu frites + boisson ?</h3>
+          <label><input type="radio" name="menu_option" value="Seul" data-prix="0" checked onclick="calculerTotalModal()"> Seul</label>
+          <label><input type="radio" name="menu_option" value="Frites Seule" data-prix="1.50" onclick="calculerTotalModal()"> Frites Seule (+1,50 €)</label>
+          <label><input type="radio" name="menu_option" value="Frites + Boisson" data-prix="2.00" onclick="calculerTotalModal()"> Frites + Boisson (+2,00 €)</label>
+        </div>
+
+        <!-- Bouton Valider 
+        <div class="modal-footer">
+          <button type="button" class="btn-ajouter-modal" onclick="ajouterDepuisModale()">
+            Ajouter • <span id="modal-total">0.00</span> €
+          </button>
+        </div>
+      </div>
     </div>
-
-    <div class="menu-colonnes">
-      <span>Seul</span>
-      <span>Menu</span>
-    </div>
-
-    <ul class="menu-liste">
-
-      <li class="menu-item">
-        <img src="img1.jpg" alt="Burger Cheese">
-        <span class="menu-nom">Burger Cheese</span>
-        <span class="menu-prix">5,00</span>
-        <span class="menu-prix">6,50</span>
-      </li>
-
-      <li class="menu-item">
-        <img src="img2.jpg" alt="Dub Cheese">
-        <span class="menu-nom">Dub Cheese</span>
-        <span class="menu-prix">6,50</span>
-        <span class="menu-prix">8,00</span>
-      </li>
-
-      <li class="menu-item">
-        <img src="img3.jpg" alt="Triple Cheese">
-        <span class="menu-nom">Triple Cheese</span>
-        <span class="menu-prix">7,50</span>
-        <span class="menu-prix">9,00</span>
-      </li>
-
-      <li class="menu-item">
-        <img src="img10.jpg" alt="Burger Street">
-        <span class="menu-nom">Burger Street</span>
-        <span class="menu-prix">8,50</span>
-        <span class="menu-prix">10,00</span>
-      </li>
-
-      <li class="menu-item">
-        <img src="img11.jpg" alt="Burger Chicken">
-        <span class="menu-nom">Burger Chicken</span>
-        <span class="menu-prix">6,50</span>
-        <span class="menu-prix">8,00</span>
-      </li>
-
-    </ul>
-
-
-<li class="menu-item">
-        <img src="img10.jpg" alt="Burger Street">
-        <span class="menu-nom">Burger Street</span>
-        <span class="menu-prix">8,50</span>
-        <span class="menu-prix">10,00</span>
-      </li>
-
-<li class="menu-item">
-        <img src="img10.jpg" alt="Burger Street">
-        <span class="menu-nom">Burger Street</span>
-        <span class="menu-prix">8,50</span>
-        <span class="menu-prix">10,00</span>
-      </li>
   </div>
-</section> -->
+</div>
 
 
-<!-- ... vos autres burgers ... -->
 
-<!--<section class="page-menu"></section>
 
-  <div class="menu-carte">
 
-    <div class="menu-header">
-      <div class="menu-logo-badge">B</div>
-      <h2>BURGER</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 1. LA FENÊTRE MODALE 
+<div id="modal-produit" class="modal-personnalisee">
+  <div class="modal-contenu">
+    <span class="fermer-modal" onclick="fermerModale()">&times;</span>
+<div class="modal-corps">
+      <!-- Partie gauche : image 
+      <div class="modal-gauche">
+        <img id="modal-img" src="" alt="Plat">
+      </div>
+
+      <!-- Partie droite : options et validation 
+      <div class="modal-droite">
+        <h2 id="modal-titre">Nom du plat</h2>
+        <p id="modal-desc">Description du plat...</p>
+
+        <div class="groupe-option">
+          <h3>Pains au choix <span style="color:red;">*</span></h3>
+          <label><input type="radio" name="pain" value="Naan" checked> Naan</label>
+          <label><input type="radio" name="pain" value="Pain Turc"> Pain Turc</label>
+          <label><input type="radio" name="pain" value="Wrap"> Wrap</label>
+        </div>
+
+        <div class="groupe-option">
+  <h3>En menu frites + boisson ?</h3>
+
+<!-- Options Menu 
+<input type="radio" name="menu_opt" value="Seul" data-prix="0" checked onchange="calculerPrixModale()"> Seul<br>
+<input type="radio" name="menu_opt" value="Frites Seule" data-prix="1.50" onchange="calculerPrixModale()"> Frites Seule (+1,50 €)<br>
+<input type="radio" name="menu_opt" value="Frites + Boisson" data-prix="2.00" onchange="calculerPrixModale()"> Frites + Boisson (+2,00 €)<br>
+
+</div>
+
+        <button type="button" class="btn-valider-modale" onclick="ajouterDepuisModale()">
+          Ajouter • <span id="modal-total">0.00</span> €
+        </button>
+      </div>
     </div>
-
-    <div class="menu-colonnes">
-      <span>Seul</span>
-      <span>Menu</span>
     </div>
-
-    <ul class="menu-liste">
-
-      <li class="menu-item">
-        <img src="img1.jpg" alt="Burger Cheese">
-        <span class="menu-nom">Burger Cheese</span>
-        <span class="menu-prix">5,00</span>
-        <span class="menu-prix">6,50</span>
-      </li>
-
-      <li class="menu-item">
-        <img src="img2.jpg" alt="Dub Cheese">
-        <span class="menu-nom">Dub Cheese</span>
-        <span class="menu-prix">6,50</span>
-        <span class="menu-prix">8,00</span>
-      </li>
-
-      <li class="menu-item">
-        <img src="img3.jpg" alt="Triple Cheese">
-        <span class="menu-nom">Triple Cheese</span>
-        <span class="menu-prix">7,50</span>
-        <span class="menu-prix">9,00</span>
-      </li>
-
-
-
-      <li class="menu-item">
-        <img src="img10.jpg" alt="Burger Street">
-        <span class="menu-nom">Burger Street</span>
-        <span class="menu-prix">8,50</span>
-        <span class="menu-prix">10,00</span>
-      </li>
-
-      <li class="menu-item">
-        <img src="img11.jpg" alt="Burger Chicken">
-        <span class="menu-nom">Burger Chicken</span>
-        <span class="menu-prix">6,50</span>
-        <span class="menu-prix">8,00</span>
-      </li>
-
-    </ul>
-
-
-<li class="menu-item">
-        <img src="img10.jpg" alt="Burger Street">
-        <span class="menu-nom">Burger Street</span>
-        <span class="menu-prix">8,50</span>
-        <span class="menu-prix">10,00</span>
-      </li>
-
-<li class="menu-item">
-        <img src="img10.jpg" alt="Burger Street">
-        <span class="menu-nom">Burger Street</span>
-        <span class="menu-prix">8,50</span>
-        <span class="menu-prix">10,00</span>
-      </li>
-
-
-
   </div>
-</section>-->
+</div>
 
+<!-- 2. LE CSS DE LA MODALE 
+<style>
+.modal-personnalisee {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.65);
+}
+
+.modal-contenu {
+  background-color: #fff;
+  margin: 5% auto;
+  width: 90%;
+  max-width: 780px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fermer-modal {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-corps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-gauche {
+  flex: 1;
+  min-width: 280px;
+}
+
+.modal-gauche img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-droite {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+}
+
+.groupe-option {
+  margin: 15px 0;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.groupe-option label {
+  display: block;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.btn-valider-modale {
+  width: 100%;
+  padding: 12px;
+  background-color: #fb911f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+
+<!-- 3. LE SCRIPT JAVASCRIPT 
+<script>
+let produitEnCours = null;
+
+function ouvrirModale(nom, prix, image, description) {
+  produitEnCours = { nom: nom, prixBase: parseFloat(prix) };
+  document.getElementById('modal-titre').innerText = nom;
+  document.getElementById('modal-desc').innerText = description;
+  document.getElementById('modal-img').src = image;
+  calculerTotalModale();
+  document.getElementById('modal-produit').style.display = 'block';
+}
+
+function fermerModale() {
+  document.getElementById('modal-produit').style.display = 'none';
+}
+
+function calculerTotalModale() {
+  let total = produitEnCours.prixBase;
+  const options = document.getElementsByName('menu_opt');
+  options.forEach(opt => {
+    if (opt.checked) {
+      total += parseFloat(opt.getAttribute('data-prix'));
+    }
+  });
+  document.getElementById('modal-total').innerText = total.toFixed(2);
+}
+
+function ajouterDepuisModale() {
+  const pain = document.querySelector('input[name="pain"]:checked').value;
+  const option = document.querySelector('input[name="menu_opt"]:checked').value;
+  const prixFinal = parseFloat(document.getElementById('modal-total').innerText);
+  const nomComplet = `${produitEnCours.nom} (${pain} - ${option})`;
+
+  if (typeof ajouterAuPanier === 'function') {
+    ajouterAuPanier(nomComplet, prixFinal);
+  }
+  fermerModale();
+}
+</script>
+
+</body>
+</html>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Liste des Plats/Tacos -->
+<ul class="menu-liste">
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,00 €</button>
+  </li>
+
+  <li class="menu-item">
+    <img src="img10.jpg" alt="Le typique" style="cursor: pointer;" onclick="ouvrirModale('Le typique', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+    <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Le typique', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Le typique</span>
+    <button type="button" class="btn-prix" onclick="ouvrirModale('Le typique', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,50 €</button>
+  </li>
+</ul>
+</section>
+
+<!-- Section Panier stylisée -->
+ <section class="commande" id="commande">
+<div class="cart-container">
+  <h2><i class="fas fa-shopping-basket"></i> Votre Commande</h2>
+  
+  <div id="liste-panier" class="cart-items">
+    <p class="empty-cart-msg">Votre panier est vide pour le moment.</p>
+  </div>
+
+  <div class="cart-total">
+    <span>Total à payer sur place :</span>
+    <strong><span id="total-prix">0.00</span> €</strong>
+  </div>
+
+  <form id="commande-form" class="cart-form">
+    <div class="inputboite">
+      <input type="text" id="client_nom" placeholder="Votre Nom et Prénom" required>
+    </div>
+    <div class="inputboite">
+      <input type="tel" id="client_tel" placeholder="Numéro de Téléphone" required>
+    </div>
+    <div class="inputboite">
+      <label for="heure_retrait" style="font-size: 0.9em; color: #666; display: block; margin-bottom: 5px;">Heure de retrait souhaitée :</label>
+      <input type="time" id="heure_retrait" required>
+    </div>
+    <button type="submit" class="btn-valider">Valider la commande (Payer sur place)</button>
+  </form>
+</div>
+</section>
+
+<!-- 1. SECTION DU MENU (PLATS SEULS) 
+<section class="section-menu">
+  <ul class="menu-liste">
+    <li class="menu-item">
+      <img src="img10.jpg" alt="Tacos 1 viande" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+      <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Tacos 1 viande</span>
+      <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 6.00, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">6,00 €</button>
+      <button type="button" class="btn-prix" onclick="ouvrirModale('Tacos 1 viande', 7.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">7,50 €</button>
+    </li>
+
+    <li class="menu-item">
+      <img src="img10.jpg" alt="Le typique" style="cursor: pointer;" onclick="ouvrirModale('Le typique', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">
+      <span class="menu-nom" style="cursor: pointer;" onclick="ouvrirModale('Le typique', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">Le typique</span>
+      <button type="button" class="btn-prix" onclick="ouvrirModale('Le typique', 6.50, 'img10.jpg', 'Kefta maison, salade, tomates, oignons et boursin.')">À partir de 6,50 €</button>
+    </li>
+  </ul>
+</section>
+
+<!-- 2. SECTION PANIER SÉPARÉE ET CENTRÉE 
+<div class="cart-wrapper">
+  <div class="cart-container">
+    <h2><i class="fas fa-shopping-basket"></i> Votre Commande</h2>
+    
+    <div id="liste-panier" class="cart-items">
+      <p class="empty-cart-msg">Votre panier est vide pour le moment.</p>
+    </div>
+
+    <div class="cart-total">
+      <span>Total à payer sur place :</span>
+      <strong><span id="total-prix">0.00</span> €</strong>
+    </div>
+
+    <form id="commande-form" class="cart-form">
+      <div class="inputboite">
+        <input type="text" id="client_nom" placeholder="Votre Nom et Prénom" required>
+      </div>
+      <div class="inputboite">
+        <input type="tel" id="client_tel" placeholder="Numéro de Téléphone" required>
+      </div>
+      <div class="inputboite">
+        <label for="heure_retrait" style="font-size: 0.9em; color: #666; display: block; margin-bottom: 5px;">Heure de retrait souhaitée :</label>
+        <input type="time" id="heure_retrait" required>
+      </div>
+      <button type="submit" class="btn-valider">Valider la commande (Payer sur place)</button>
+    </form>
+  </div>
+</div>
+
+-->
+
+
+
+
+
+<!-- Section Contact -->
+<section class="contact" id="contact">
+  <h1>Nos Contact</h1>
+  <p class="sous-titre">Une envie, une question, une envie de commander ? Contactez-nous ou trouvez votre chemin directement.</p>
+
+  <div class="contact-grille">
+    <div class="contact-infos">
+      <div class="contact-ligne">
+        <i class="fa-solid fa-location-dot"></i>
+        <div>
+          <strong>Adresse</strong>
+          <p>65000 Tarbes</p>
+        </div>
+      </div>
+
+      <div class="contact-ligne">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <strong>Téléphone</strong>
+          <p>00 00 00 00 00</p>
+        </div>
+      </div>
+
+      <div class="contact-ligne">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <strong>Email</strong>
+          <p>Exmple@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-ligne">
+        <i class="fa-solid fa-clock"></i>
+        <div>
+          <strong>Horaires d'ouverture</strong>
+          <p>7/7j 24/24h</p>
+        </div>
+      </div>
+
+      <div class="contact-boutons">
+        <a href="#" class="btn-noir">Commander sur UberEats</a>
+        <a href="#" class="btn-noir">Commander sur Deliveroo</a>
+        <a href="#" class="btn-contour">Nous appeler</a>
+      </div>
+    </div>
+
+    <div class="contact-carte">
+      <h3>New Street Food</h3>
+      <iframe
+        src="https://www.google.com/maps?q=11+Rue+Fran%C3%A7ois+Mousis,+65000+Tarbes&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=11+Rue+Fran%C3%A7ois+Mousis,+65000+Tarbes" class="btn-itineraire">Itinéraire</a>
+    </div>
+  </div>
+</section>
+
+<!-- FENÊTRE MODALE UNIQUE -->
+<div id="modal-produit" class="modal-personnalisee">
+  <div class="modal-contenu">
+    <span class="fermer-modal" onclick="fermerModale()">&times;</span>
+    <div class="modal-corps">
+      <!-- Partie gauche : image -->
+      <div class="modal-gauche">
+        <img id="modal-img" src="" alt="Plat">
+      </div>
+
+      <!-- Partie droite : options et validation -->
+      <div class="modal-droite">
+        <h2 id="modal-titre">Nom du plat</h2>
+        <p id="modal-desc">Description du plat...</p>
+
+        <div class="groupe-option">
+          <h3>Pains au choix <span style="color:red;">*</span></h3>
+          <label><input type="radio" name="pain" value="Naan" checked> Naan</label>
+          <label><input type="radio" name="pain" value="Pain Turc"> Pain Turc</label>
+          <label><input type="radio" name="pain" value="Wrap"> Wrap</label>
+        </div>
+
+        <div class="groupe-option">
+          <h3>En menu frites + boisson ?</h3>
+          <label><input type="radio" name="menu_opt" value="Seul" data-prix="0" checked onchange="calculerTotalModale()"> Seul</label><br>
+          <label><input type="radio" name="menu_opt" value="Frites Seule" data-prix="1.50" onchange="calculerTotalModale()"> Frites Seule (+1,50 €)</label><br>
+          <label><input type="radio" name="menu_opt" value="Frites + Boisson" data-prix="2.00" onchange="calculerTotalModale()"> Frites + Boisson (+2,00 €)</label><br>
+        </div>
+
+        <button type="button" class="btn-valider-modale" onclick="ajouterDepuisModale()">
+          Ajouter • <span id="modal-total">0.00</span> €
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS MODALE -->
+<style>
+.modal-personnalisee {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.65);
+}
+
+.modal-contenu {
+  background-color: #fff;
+  margin: 5% auto;
+  width: 90%;
+  max-width: 780px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fermer-modal {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-corps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-gauche {
+  flex: 1;
+  min-width: 280px;
+}
+
+.modal-gauche img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-droite {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+}
+
+.groupe-option {
+  margin: 15px 0;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.groupe-option label {
+  display: block;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.btn-valider-modale {
+  width: 100%;
+  padding: 12px;
+  background-color: #fb911f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+
+<!-- SCRIPTS JAVASCRIPT 
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("");
+  })(); 
+-->
+
+<!-- SCRIPTS JAVASCRIPT -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("H1tZ7mir-XYP6Fj8q");
+    })();
+
+
+
+
+
+  let panier = [];
+  let produitEnCours = null;
+
+  // --- GESTION DE LA MODALE ---
+  function ouvrirModale(nom, prix, image, description) {
+    produitEnCours = { nom: nom, prixBase: parseFloat(prix) };
+    document.getElementById('modal-titre').innerText = nom;
+    document.getElementById('modal-desc').innerText = description;
+    document.getElementById('modal-img').src = image;
+
+    // Re-sélectionner les options par défaut
+    const painRadios = document.getElementsByName('pain');
+    if (painRadios.length > 0) painRadios[0].checked = true;
+
+    const menuRadios = document.getElementsByName('menu_opt');
+    if (menuRadios.length > 0) menuRadios[0].checked = true;
+
+    calculerTotalModale();
+    document.getElementById('modal-produit').style.display = 'block';
+  }
+
+  function fermerModale() {
+    document.getElementById('modal-produit').style.display = 'none';
+  }
+
+  function calculerTotalModale() {
+    if (!produitEnCours) return;
+    let total = produitEnCours.prixBase;
+    const options = document.getElementsByName('menu_opt');
+    options.forEach(opt => {
+      if (opt.checked) {
+        total += parseFloat(opt.getAttribute('data-prix') || 0);
+      }
+    });
+    document.getElementById('modal-total').innerText = total.toFixed(2);
+  }
+
+  function ajouterDepuisModale() {
+    const pain = document.querySelector('input[name="pain"]:checked')?.value || 'Naan';
+    const option = document.querySelector('input[name="menu_opt"]:checked')?.value || 'Seul';
+    const prixFinal = parseFloat(document.getElementById('modal-total').innerText);
+    const nomComplet = `${produitEnCours.nom} (${pain} - ${option})`;
+
+    ajouterAuPanier(nomComplet, prixFinal);
+    fermerModale();
+  }
+
+  // --- GESTION DU PANIER ---
+  function ajouterAuPanier(nomPlat, prix) {
+    panier.push({ nom: nomPlat, prix: prix });
+    afficherPanier();
+  }
+
+  function supprimerDuPanier(index) {
+    panier.splice(index, 1);
+    afficherPanier();
+  }
+
+  function afficherPanier() {
+    const listeHTML = document.getElementById('liste-panier');
+    const totalHTML = document.getElementById('total-prix');
+    
+    if (panier.length === 0) {
+      listeHTML.innerHTML = '<p class="empty-cart-msg">Votre panier est vide pour le moment.</p>';
+      totalHTML.innerText = '0.00';
+      return;
+    }
+
+    listeHTML.innerHTML = '';
+    let total = 0;
+
+    panier.forEach((item, index) => {
+      total += item.prix;
+      listeHTML.innerHTML += `
+        <div class="cart-item">
+          <div class="cart-item-info">
+            <span class="cart-item-title">${item.nom}</span>
+            <span class="cart-item-price">${item.prix.toFixed(2)} €</span>
+          </div>
+          <button type="button" class="btn-remove" onclick="supprimerDuPanier(${index})">
+            Supprimer
+          </button>
+        </div>
+      `;
+    });
+
+    totalHTML.innerText = total.toFixed(2);
+  }
+
+  // --- ENVOI COMMANDE VIA EMAILJS ---
+  document.getElementById('commande-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (panier.length === 0) {
+      alert("Votre panier est vide ! Veuillez ajouter des produits avant de commander.");
+      return;
+    }
+
+    let detailsCommande = panier.map(item => `${item.nom} (${item.prix.toFixed(2)}€)`).join('\n - ');
+    let totalCommande = document.getElementById('total-prix').innerText;
+
+    let params = {
+      user_name: document.getElementById('client_nom').value,
+      user_phone: document.getElementById('client_tel').value,
+      heure_retrait: document.getElementById('heure_retrait').value,
+      details_commande: "\n - " + detailsCommande,
+      total: totalCommande + " €"
+    };
+
+    emailjs.send('VOTRE_SERVICE_ID', 'VOTRE_TEMPLATE_ID', params)
+      .then(function() {
+        alert('Commande enregistrée ! Vous pourrez régler directement au restaurant lors du retrait.');
+        panier = [];
+        afficherPanier();
+        document.getElementById('commande-form').reset();
+      }, function(error) {
+        alert("Erreur lors de l'envoi de la commande.");
+        console.error(error);
+      });
+  });
+</script>
 </body>
 </html>

@@ -712,6 +712,292 @@ section{
 }
 
 
+
+
+
+
+
+/* --- Style du Panier Click & Collect --- */
+.cart-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-container h2 {
+  color: #fb911f;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.cart-items {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.cart-item-price {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.btn-remove {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background 0.2s;
+}
+
+.btn-remove:hover {
+  background: #cc0000;
+}
+
+.empty-cart-msg {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+.cart-total strong {
+  color: #fb911f;
+}
+
+.cart-form .inputboite {
+  margin-bottom: 15px;
+}
+
+.cart-form input[type="text"],
+.cart-form input[type="tel"],
+.cart-form input[type="time"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.cart-form input:focus {
+  border-color: #fb911f;
+}
+
+.btn-valider {
+  width: 100%;
+  padding: 14px;
+  background: #fb911f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-valider:hover {
+  background: #d87710;
+}
+
+/* Style des boutons de prix dans le menu */
+.btn-prix {
+    background-color: #fb911f;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-prix:hover {
+    background-color: #d87710;
+    transform: scale(1.05);
+}
+
+.btn-prix:active {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style de la modale */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  width: 90%;
+  max-width: 750px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  z-index: 10;
+}
+
+.modal-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-options {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+}
+
+.modal-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.option-group {
+  margin-bottom: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.option-group h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.option-group label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.required {
+  color: red;
+}
+
+.btn-ajouter-modal {
+  width: 100%;
+  padding: 12px;
+  background-color: #fb911f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-ajouter-modal:hover {
+  background-color: #d87710;
+}
+
+.img-cliquable {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.img-cliquable:hover {
+    transform: scale(1.08); /* Petit effet de zoom au survol */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .contact {
   background-image: url(./img28.jpg);
   background-size: cover;
